@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as vars;
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: radial-gradient(circle at top, #1e293b 0%, #020617 55%, #020617);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+
+cursor {}
+
+
+.box-content-field {
+
+    h3 {
+        font-size: 21px;
+        color: vars.$primary-dark;
+    }
+
+    p {}
+}

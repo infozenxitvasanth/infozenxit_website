@@ -1,0 +1,227 @@
+$beginner: #16a34a;
+$intermediate: #2563eb;
+$advanced: #7c3aed;
+
+/* ================= HEADER ================= */
+.simple-header {
+  text-align: center;
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    color: #475569;
+  }
+}
+
+
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.filter-label {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+.doodle-btn {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: 2px dashed #c7d2fe;
+  background: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &.active {
+    background: #111827;
+    color: white;
+    border-style: solid;
+  }
+}
+
+/* ================= COURSE CARDS ================= */
+.course-card {
+  padding: 1.4rem;
+  border-radius: 20px;
+  background: #f1f5f9;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .meta {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+    color: #64748b;
+  }
+
+  ul {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      background: #111827;
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+    }
+  }
+
+  &.level-beginner {
+    border-left: 4px solid $beginner;
+  }
+
+  &.level-intermediate {
+    border-left: 4px solid $intermediate;
+  }
+
+  &.level-advanced {
+    border-left: 4px solid $advanced;
+  }
+
+.level-badget-beginner {
+      height: fit-content;
+  background-color: #16a34a;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.level-badget-intermediate {
+      height: fit-content;
+  background-color: #f59e0b; 
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.level-badget-advanced {
+      height: fit-content;
+  background-color: #dc2626;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+}
+
+/* ================= MODAL ================= */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    display: grid;
+    gap: 0.7rem;
+
+    input,
+    textarea {
+      padding: 0.6rem;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      font-size: 0.85rem;
+    }
+
+    button {
+      background: #111827;
+      color: white;
+      padding: 0.6rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+/* ================= FILTER (FIXED DOODLE STYLE) ================= */
+
+.filter-area {
+  // background: #f9fafb; /* light only */
+  padding: 1.2rem;
+  border-radius: 20px;
+  border: 1px dashed #c7d2fe;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+/* DOODLE BUTTON */
+.doodle-btn {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: #ffffff;        /* NO BLACK */
+  border: 2px dashed #c7d2fe;  /* doodle look */
+  font-size: 0.8rem;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* ACTIVE STATE (SOFT COLOR ONLY) */
+.doodle-btn.active {
+  background: #eef2ff;         /* soft indigo */
+  border-color: #818cf8;
+  color: #3730a3;
+  font-weight: 600;
+}
+
+/* HOVER */
+.doodle-btn:hover {
+  background: #f1f5f9;
+}
+

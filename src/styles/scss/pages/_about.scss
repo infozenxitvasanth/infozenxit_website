@@ -1,0 +1,43 @@
+/* ==================================================
+   AboutPage.module.scss
+   Put this content in the same folder as the component
+   and name it `AboutPage.module.scss`.
+   This module is intentionally small — Tailwind handles
+   layout; SCSS holds variables, subtle gradients & helpers.
+   ==================================================*/
+
+:root {
+    --primary: #8b5cf6;
+    --secondary: #06b6d4;
+}
+
+.about-page {
+    /* optional background or spacing tweaks */
+
+    .mission-card {
+        background-color: rgba(15, 23, 42, 0.8);
+        border: 1px solid #94a3b82e;
+    }
+}
+
+.gradient-underline {
+    height: 6px;
+    border-radius: 999px;
+    width: 90px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.22);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* small helpers for dark mode subtle borders */
+@media (prefers-color-scheme: dark) {
+    .about-page {
+        /* tweak if needed */
+    }
+}

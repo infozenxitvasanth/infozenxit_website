@@ -1,0 +1,39 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/_globals';
+
+
+@use 'layout/navbar.scss';
+@use 'layout/footer.scss';
+@use 'layout/not_found.scss';
+// Components
+
+@use 'components/form.scss';
+@use "components/featuresAndForm.scss";
+@use "components/testimonials.scss";
+// page
+@use 'pages//home.scss';
+@use 'pages/services';
+// 
+@use 'pages/career';
+@use 'pages/courses';
+
+@use 'pages/about';
+@use 'pages/contact';
+
+@use 'components/button.scss';
+
+.courses-form-main{
+    background-color: #0000006e;
+}
+.courses-input-field {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.courses-input-field:focus {
+  border-color: #06b6d4; /* cyan-500 */
+}

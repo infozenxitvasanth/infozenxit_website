@@ -1,0 +1,201 @@
+/* footer.scss */
+@use "../abstracts/variables" as vars;
+
+$primary: vars.$primary !default;
+$secondary: vars.$secondary !default;
+$primary-dark: vars.$primary-dark !default;
+
+.site-footer {
+  background: linear-gradient(180deg, #f3f7fb 0%, #eef3f6 100%);
+  color: #263238;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  padding: 48px 0;
+
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footer-top {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    display: inline-block;
+    gap: 14px;
+    align-items: center;
+    min-width: 220px;
+
+    .logo-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(74,49,133,0.06);
+    }
+
+    .brand-title {
+      font-size: 18px;
+      margin: 0;
+      color: $primary-dark;
+      font-weight: 700;
+    }
+
+    .brand-sub {
+      margin: 2px 0 0;
+      font-size: 13px;
+      color: #556970;
+    }
+  }
+
+  .footer-nav {
+    flex: 1 1 680px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
+    gap: 18px;
+
+    h4 {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+      color: $primary-dark;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          color: #42515a;
+          text-decoration: none;
+          font-size: 14px;
+
+          &:hover {
+            color: $primary;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .subscribe {
+      .subscribe-form {
+        display: flex;
+        gap: 8px;
+
+        input {
+          flex: 1;
+          padding: 10px 12px;
+          border-radius: 8px;
+          border: 1px solid #e4e9ee;
+          background: white;
+          font-size: 14px;
+          outline: none;
+
+          &:focus {
+            box-shadow: 0 0 0 4px rgba(139,92,246,0.08);
+            border-color: $primary;
+          }
+        }
+
+        button {
+          padding: 10px 14px;
+          border-radius: 8px;
+          border: none;
+          background: $primary;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+          &:hover { transform: translateY(-1px); }
+        }
+      }
+
+      .socials {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+
+        .social {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 8px;
+          background: white;
+          border: 1px solid #e8edf1;
+          box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+          text-decoration: none;
+          color: #3b4b53;
+
+          &:hover {
+            background: linear-gradient(180deg, $primary 0%, $secondary 100%);
+            color: white;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-divider {
+    height: 1px;
+    background: #e6edf1;
+    margin: 8px 0 0;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0;
+
+    p {
+      margin: 0;
+      color: #6b7a80;
+      font-size: 14px;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 900px) {
+    .footer-nav { grid-template-columns: repeat(2, 1fr); }
+    .brand { width: 100%; }
+  }
+
+  @media (max-width: 520px) {
+    padding: 36px 0;
+    .footer-nav { grid-template-columns: 1fr; }
+
+    .footer-top { gap: 20px; }
+    .brand { align-items: flex-start; }
+  }
+}
+
+/* utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}

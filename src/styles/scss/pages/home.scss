@@ -1,0 +1,736 @@
+@use "../abstracts/variables" as vars;
+
+
+.banner-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 1;
+background-color: #000;
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    position: absolute; 
+    
+  }
+
+
+  .banner-left-btn{
+    top: 450px;
+    left: 10px;
+     color: #fff;
+    border: 1px solid vars.$primary;
+  }
+    .banner-right-btn{
+    top: 450px;
+    left: 60px;
+    color:  #fff;
+      border: 1px solid vars.$primary;
+  }
+
+}
+  .overlay {
+  pointer-events: none; 
+}
+
+
+
+
+/* Top home section */
+.home-section-one {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+    overflow: hidden;
+    background: radial-gradient(circle at top, #101827, #020617 55%, #000 100%);
+    color: #fff;
+}
+
+/* Text centered and above animations */
+.hero-content {
+    position: relative;
+    z-index: 5;
+
+    text-align: center;
+}
+
+.hero-orbit-wrapper-back {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 420px;
+    z-index: 1;
+    /* behind text, above bg circles */
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.hero-orbit {
+    position: absolute;
+    border-radius: 999px;
+    border: 1px dashed rgba(148, 163, 184, 0.35);
+}
+
+.hero-orbit.outer {
+    inset: 0;
+}
+
+.hero-orbit.middle {
+    inset: 18%;
+    border-style: solid;
+    border-color: rgba(56, 189, 248, 0.45);
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.35);
+}
+
+.hero-orbit.inner {
+    position: absolute;
+    inset: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-orbit-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: radial-gradient(circle, #22c55e, #0ea5e9);
+    box-shadow: 0 0 32px rgba(34, 197, 94, 0.9);
+}
+
+.company-name {
+    font-size: clamp(2.8rem, 4vw, 3.6rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.company-name span {
+    background: linear-gradient(to right, vars.$primary, #0ea5e9);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.company-desc {
+    font-size: 22px;
+    padding: 40px;
+
+}
+
+.home-bg-circles {
+    position: absolute;
+    inset: -10%;
+    z-index: 0;
+    /* very back */
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bg-circle {
+    position: absolute;
+    border-radius: 999px;
+    filter: blur(40px);
+    opacity: 0.35;
+    mix-blend-mode: screen;
+    animation: floatCircle 18s linear infinite;
+}
+
+.bg-circle.c1 {
+    width: 260px;
+    height: 260px;
+    background: #0ea5e9;
+    top: 10%;
+    left: -5%;
+}
+
+.bg-circle.c2 {
+    width: 320px;
+    height: 320px;
+    background: #22c55e;
+    bottom: -10%;
+    right: -5%;
+    animation-duration: 22s;
+}
+
+.bg-circle.c3 {
+    width: 220px;
+    height: 220px;
+    background: #6366f1;
+    top: 50%;
+    right: 20%;
+    animation-duration: 26s;
+}
+
+/* Floating keyframes */
+@keyframes floatCircle {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(20px, -30px, 0) scale(1.05);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+}
+
+.sec-one-title {
+
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+// 
+.home-about-section {
+    background: #0f172a; // slate-950
+    // position: relative;
+
+    h3 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #cbd5e1;
+    }
+
+    /* Image Wrapper */
+    .about-image-wrapper {
+        position: relative;
+
+        .about-img {
+            width: 100%;
+            height: auto;
+            border-radius: 18px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    /* Points Box */
+    .about-points {
+        margin-top: 25px;
+        display: grid;
+        gap: 15px;
+    }
+
+    .point-box {
+        padding: 18px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: 0.3s ease;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        .icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+
+            &.purple {
+                background: #8b5cf6;
+            }
+
+            &.blue {
+                background: #06b6d4;
+            }
+        }
+    }
+}
+
+
+// --------- Color palette you gave ----------
+$primary: #8b5cf6;
+$secondary: #06b6d4;
+$primary-dark: #4a3185;
+
+// --------- Main section background + blobs ----------
+.internship-section {
+    position: relative;
+    background:
+        radial-gradient(circle at top left, $primary 0, #020617 40%, #020617 100%);
+    isolation: isolate;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(70px);
+        mix-blend-mode: screen;
+        opacity: 0.6;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    &::before {
+        width: 340px;
+        height: 340px;
+        top: -80px;
+        left: -60px;
+        background: radial-gradient(circle, $secondary 0, transparent 60%);
+        animation: blobMove1 18s ease-in-out infinite alternate;
+    }
+
+    &::after {
+        width: 380px;
+        height: 380px;
+        bottom: -120px;
+        right: -40px;
+        background: radial-gradient(circle, $primary-dark 0, transparent 65%);
+        animation: blobMove2 22s ease-in-out infinite alternate;
+    }
+}
+
+// --------- Image card animations ----------
+.internship-image-wrapper {
+    perspective: 1200px;
+}
+
+.internship-image-card {
+    position: relative;
+    transform-style: preserve-3d;
+    background: linear-gradient(135deg,
+            rgba(148, 163, 184, 0.4),
+            rgba(6, 182, 212, 0.9));
+    padding: 0.3rem;
+    border-radius: 1.6rem;
+    box-shadow:
+        0 24px 50px rgba(15, 23, 42, 0.95),
+        0 0 0 1px rgba(15, 23, 42, 0.9);
+    animation: floatCard 14s ease-in-out infinite alternate;
+    transition:
+        transform 0.9s cubic-bezier(0.19, 1, 0.22, 1),
+        box-shadow 0.6s ease;
+    overflow: hidden;
+}
+
+.internship-image-card img {
+    border-radius: 1.3rem;
+    display: block;
+    transform: translateZ(40px);
+    transition: transform 0.8s ease;
+}
+
+.internship-image-card:hover {
+    transform: translateY(-10px) rotate3d(1, -1, 0, 10deg) scale(1.02);
+    box-shadow:
+        0 30px 80px rgba(15, 23, 42, 1),
+        0 0 0 1px rgba(6, 182, 212, 0.6);
+}
+
+.internship-image-card:hover img {
+    transform: translateZ(50px) scale(1.04);
+}
+
+.internship-image-glow {
+    position: absolute;
+    inset: 20%;
+    border-radius: inherit;
+    background: radial-gradient(circle at 10% 0,
+            rgba(6, 182, 212, 0.35),
+            transparent 60%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+// --------- Badge subtle animation ----------
+.internship-badge {
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.8);
+    transform-origin: left center;
+    animation: badgePop 0.8s ease-out 0.2s both;
+}
+
+// --------- List item style ----------
+.internship-list-item {
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 999px;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    backdrop-filter: blur(10px);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+
+    span:first-child {
+        width: 1.8rem;
+        height: 1.8rem;
+        background: radial-gradient(circle, $secondary 0, rgba(15, 23, 42, 0.8));
+        box-shadow: 0 0 0 6px rgba(6, 182, 212, 0.25);
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: $primary;
+        background: rgba(15, 23, 42, 0.96);
+        box-shadow: 0 12px 35px rgba(15, 23, 42, 0.95);
+    }
+}
+
+// --------- Animations ----------
+@keyframes blobMove1 {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(40px, 60px, 0) scale(1.15);
+    }
+
+    100% {
+        transform: translate3d(10px, 20px, 0) scale(1.05);
+    }
+}
+
+@keyframes blobMove2 {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(-40px, -40px, 0) scale(1.12);
+    }
+
+    100% {
+        transform: translate3d(-10px, -10px, 0) scale(1.03);
+    }
+}
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0) rotate3d(0, 0, 0, 0deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate3d(1, -1, 0, 6deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate3d(-0.6, 1, 0, -4deg);
+    }
+}
+
+@keyframes badgePop {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+// ======
+
+
+// ====
+
+.your-suggestion-section {
+    position: relative;
+    background: radial-gradient(circle at top left, $primary 0, #020617 38%, #020617 100%);
+    isolation: isolate;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(70px);
+        mix-blend-mode: screen;
+        opacity: 0.55;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    &::before {
+        width: 320px;
+        height: 320px;
+        top: -80px;
+        right: -60px;
+        background: radial-gradient(circle, $secondary 0, transparent 60%);
+        animation: ys-blob-1 22s ease-in-out infinite alternate;
+    }
+
+    &::after {
+        width: 380px;
+        height: 380px;
+        bottom: -140px;
+        left: -80px;
+        background: radial-gradient(circle, $primary-dark 0, transparent 70%);
+        animation: ys-blob-2 26s ease-in-out infinite alternate;
+    }
+}
+
+.your-suggestion-left {
+    position: relative;
+}
+
+.your-suggestion-highlight-card {
+    position: relative;
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.9),
+        0 0 0 1px rgba(148, 163, 184, 0.24);
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 0% 0%,
+                rgba(139, 92, 246, 0.2),
+                transparent 60%);
+        opacity: 0.9;
+        mix-blend-mode: soft-light;
+        pointer-events: none;
+    }
+}
+
+.your-suggestion-icon-wrap {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #fb7185 0, rgba(15, 23, 42, 0.9));
+    box-shadow: 0 0 0 8px rgba(248, 113, 113, 0.15);
+}
+
+.your-suggestion-shine {
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    width: 60%;
+    height: 200%;
+    background: linear-gradient(120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.35) 40%,
+            transparent 80%);
+    transform: translateX(-120%) rotate(18deg);
+    animation: ys-shine 5.5s ease-in-out infinite;
+}
+
+.your-suggestion-cta {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        background: linear-gradient(90deg, $secondary, $primary);
+        transition: width 0.25s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.your-suggestion-grid {
+    margin-top: 0.25rem;
+}
+
+.your-suggestion-pill {
+    background: rgba(15, 23, 42, 0.82);
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.65);
+    backdrop-filter: blur(10px);
+    color: #e5e7eb;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.85);
+    transition:
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+
+    &:hover {
+        background: rgba(15, 23, 42, 0.96);
+        border-color: $secondary;
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 1);
+    }
+}
+
+.your-suggestion-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: radial-gradient(circle, $secondary 0, $primary 70%);
+    box-shadow: 0 0 0 6px rgba(6, 182, 212, 0.25);
+}
+
+// Animations
+@keyframes ys-blob-1 {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(-30px, 40px, 0) scale(1.15);
+    }
+
+    100% {
+        transform: translate3d(0, 10px, 0) scale(1.05);
+    }
+}
+
+@keyframes ys-blob-2 {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(40px, -40px, 0) scale(1.12);
+    }
+
+    100% {
+        transform: translate3d(10px, -10px, 0) scale(1.04);
+    }
+}
+
+@keyframes ys-shine {
+    0% {
+        transform: translateX(-120%) rotate(18deg);
+    }
+
+    20% {
+        transform: translateX(160%) rotate(18deg);
+    }
+
+    100% {
+        transform: translateX(160%) rotate(18deg);
+    }
+}
+
+// -------
+
+// -------
+.roadmap-section {
+    position: relative;
+    // padding-top: 2rem;
+    height: 0px;
+    background: radial-gradient(circle at top, #385386, #020617 55%, #000 100%);
+}
+
+.roadmap-card {
+    z-index: 1;
+    position: relative;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+    border: 1px solid #e5e7eb;
+    margin-bottom: 3.5rem;
+}
+
+.roadmap-section-container {
+    position: relative;
+    top: -90px;
+}
+
+.roadmap-steps {
+    position: relative;
+}
+
+
+.roadmap-line {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    right: 6%;
+    height: 1px;
+    background-color: #e5e7eb;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+
+.roadmap-step {
+    position: relative;
+    z-index: 1; // above line
+}
+
+
+.roadmap-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.15),
+        0 0 0 1px rgba(148, 163, 184, 0.35);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.roadmap-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #d60037; // red like your reference
+}
+
+/* hover animation */
+.roadmap-circle:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.25),
+        0 0 0 2px rgba(168, 85, 247, 0.25);
+}
+
+/* small-screen tweaks */
+@media (max-width: 640px) {
+    .roadmap-card {
+        padding: 1.5rem 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .roadmap-circle {
+        width: 96px;
+        height: 96px;
+    }
+
+    .roadmap-line {
+        left: 12%;
+        right: 12%;
+    }
+}

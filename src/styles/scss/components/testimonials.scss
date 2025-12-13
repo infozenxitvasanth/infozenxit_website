@@ -1,0 +1,60 @@
+// File: TestimonialsOne.scss
+@use "../abstracts/variables" as vars;
+
+:root {
+    --primary: #{vars.$primary};
+    --secondary: #{vars.$secondary};
+    --primary-dark: #{vars.$primary-dark};
+}
+
+.testimonials-one {
+
+    .testimonials-one-content {
+        border: 1px solid #fff !important;
+
+    }
+
+
+    .bg-panel {
+        background: #1d293dcc;
+
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.06), rgba(6, 182, 212, 0.03));
+        border: 1px solid rgba(139, 92, 246, 0.08);
+    }
+
+    .btn-icon {
+
+        border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .slide {
+        min-height: 120px;
+    }
+
+    .testimonial-text {
+        color: #ffffff;
+        line-height: 1.5;
+    }
+
+    .text-muted {
+        color: #6b7280;
+    }
+
+    .dots {
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 9999px;
+            background: rgba(0, 0, 0, 0.12);
+            border: none;
+            cursor: pointer;
+            transition: transform 160ms ease, background 160ms ease;
+        }
+
+        .dot.active {
+            transform: scale(1.15);
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            box-shadow: 0 4px 10px rgba(106, 17, 203, 0.12);
+        }
+    }
+}

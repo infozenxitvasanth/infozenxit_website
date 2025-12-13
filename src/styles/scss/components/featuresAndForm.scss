@@ -1,0 +1,88 @@
+
+/* --- service card --- */
+@use "../abstracts/variables" as vars;
+
+/* -------------------------
+   MAIN PAGE SECTION WRAPPER
+-------------------------- */
+
+.f-section {
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(80px);
+        opacity: 0.7;
+        z-index: 0;
+    }
+
+    &::before {
+        width: 320px;
+        height: 320px;
+        top: -80px;
+        left: -40px;
+        background: radial-gradient(circle at top left,
+                vars.$primary,
+                transparent 60%);
+    }
+
+    &::after {
+        width: 380px;
+        height: 380px;
+        bottom: -120px;
+        right: -40px;
+        background: radial-gradient(circle at bottom right,
+                vars.$secondary,
+                transparent 60%);
+    }
+
+    .glass-card {
+        position: relative;
+        z-index: 1;
+        background: rgba(15, 23, 42, 0.75); // slate-900 with alpha
+        border-radius: 1.25rem;
+        border: 1px solid rgba(148, 163, 184, 0.45); // slate-400
+        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.9);
+        backdrop-filter: blur(22px);
+    }
+    .f-card {
+        position: relative;
+        z-index: 1;
+        background: rgba(15, 23, 42, 0.75);
+        border-radius: 1.25rem;
+        border: 1px solid rgba(148, 163, 184, 0.45);
+        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.9);
+        backdrop-filter: blur(22px);
+        padding: 2rem;
+        min-height: 600px;
+    }
+
+    .f-title-underline {
+        width: 80px;
+        height: 3px;
+        margin-top: 0.75rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg,
+                vars.$primary,
+                vars.$secondary);
+    }
+
+    .f-icon {
+        flex-shrink: 0;
+        width: 28px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: rgba(vars.$primary-dark, 0.18);
+        border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+}
+
+
+
