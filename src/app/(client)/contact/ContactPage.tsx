@@ -18,18 +18,19 @@ export default function ContactPage() {
         <div className={"contact-card"}>
           <div className={'contact-iconCircle'}><FiPhone size={20} /></div>
           <h4 className="font-semibold mt-3 text-white">Phone</h4>
-          <p className="text-sm text-slate-500 mt-2">+91 7598098675</p>
+          <p className="text-sm text-slate-200 mt-2">+91 7200286091</p>
         </div>
 
         <div className={"contact-card"}>
           <div className={"contact-iconCircle"}><FiMail size={20} /></div>
           <h4 className="font-semibold mt-3 text-white">Email</h4>
-          <p className="text-sm text-slate-500 mt-2">infozenxit@gmail.com</p>
+          <p className="text-sm text-slate-200 mt-2">infozenxit@gmail.com</p>
         </div>
 
         <div className={"contact-card"}>
           <div className={"contact-iconCircle"}><FiMapPin size={20} /></div>
           <h4 className="font-semibold mt-3 text-white">Location</h4>
+          <p className="text-slate-200">Upstair, Tower Jn, Sivaraj Building 2nd Floor, Rose Centre, Nagercoil, Tamil Nadu 629001</p>
           <p className="text-sm text-slate-500 mt-2">India</p>
         </div>
       </section>

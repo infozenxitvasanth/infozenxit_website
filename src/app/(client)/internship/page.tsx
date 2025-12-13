@@ -357,7 +357,7 @@ const InternshipPage: React.FC = () => {
 
 
 
-            <div className="container mx-auto max-w-7xl px-5">
+            {/* <div className="container mx-auto max-w-7xl px-5">
                 <motion.div
                     className="mb-6 text-center md:mb-10"
                     initial={{ opacity: 0, y: 20 }}
@@ -379,7 +379,7 @@ const InternshipPage: React.FC = () => {
                 <TestimonialsOne />
 
                 <FormHorizontal name="internship" Items={[{ slug: "android", title: "Android" }]} />
-            </div>
+            </div> */}
         </div>
     );
 };

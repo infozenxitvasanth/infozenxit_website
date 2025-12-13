@@ -13,6 +13,7 @@ import {
     FiTrendingUp,
     FiSmartphone,
 } from "react-icons/fi";
+import MapSection from "@/app/components/reusable/map/MapSeaction";
 
 const fadeUp = {
     hidden: { y: 20, opacity: 0 },
@@ -38,7 +39,7 @@ export default function AboutPage() {
             {/* =============================== HEADER =============================== */}
             <motion.div variants={fadeUp} className="text-center mb-12">
                 <h1 className="text-3xl md:text-4xl text-white font-semibold ">
-                    About InfoZenXIT
+                    About InfoZenX IT
                 </h1>
 
                 <motion.div
@@ -56,7 +57,7 @@ export default function AboutPage() {
                 className="grid md:grid-cols-1 gap-10 items-center mb-12 text-center"
             >
                 <p className="mt-5 text-gray-200  leading-relaxed">
-                    InfoZenXIT is a leading technology solutions provider specializing in web
+                    InfoZenX IT is a leading technology solutions provider specializing in web
                     development, mobile app development, digital marketing, and IT consulting.
                 </p>
 
@@ -224,6 +225,20 @@ export default function AboutPage() {
                     ))}
                 </motion.div>
             </motion.div>
+ <div className="h-12" />
+
+<div className="py-10">
+ 
+  <h2 className="text-gray-200 text-center text-2xl font-semibold mb-2">
+    Our Location
+  </h2>
+
+  <p className="text-gray-400 text-center mb-6">
+    Visit our office to learn more about our services and meet our team in person.
+  </p>
+
+  <MapSection />
+</div>
 
 
             <div className="h-12" />

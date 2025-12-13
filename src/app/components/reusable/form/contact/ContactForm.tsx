@@ -53,7 +53,7 @@ export default function ContactForm() {
         } else {
 
             const digits = f.phone.replace(/\D/g, "");
-            if (digits.length < 7) err.phone = "Phone number looks too short.";
+            if (digits.length < 10) err.phone = "Phone number looks too short.";
             if (!/^\+?[\d\s\-().]*$/.test(f.phone)) err.phone = "Phone contains invalid characters.";
         }
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
         try {
             // build the message text
             const messageLines = [
-                `*New message from website*`,
+                `*New message from Contact*`,
                 ``,
                 `*Name:* ${form.name.trim()}`,
                 `*Email:* ${form.email.trim()}`,
@@ -219,7 +219,7 @@ export default function ContactForm() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full py-2 rounded text-white font-semibold"
+                        className="cursor-pointer w-full py-2 rounded text-white font-semibold"
                         style={{ backgroundColor: "var(--primary-color)" }}
                     >
                         {loading ? "Preparing..." : "Send Message via WhatsApp"}

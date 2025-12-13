@@ -138,58 +138,45 @@ ${vals.message || "-"}
             <div className="form-grid">
 
                 {/* NAME */}
-                <div className="form-group">
-                    <label htmlFor="name" className="form-label">
-                        <FiUser className="icon" /> Full Name
-                    </label>
-                    <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        className={`form-input ${errors.name ? "has-error" : ""}`}
-                        placeholder="Enter your name"
-                        value={values.name}
-                        onChange={handleChange}
-                    />
-                    {errors.name && <p className="error-text">{errors.name}</p>}
-                </div>
+                <FormInput
+  id="name"
+  name="name"
+  label="Full Name"
+  placeholder="Enter your name"
+  value={values.name}
+  required
+  icon={<FiUser />}
+  error={errors.name}
+  onChange={handleChange}
+/>
 
-                {/* MOBILE */}
-                <div className="form-group">
-                    <label htmlFor="mobile" className="form-label">
-                        <FiPhone className="icon" /> Mobile Number
-                    </label>
-                    <input
-                        id="mobile"
-                        name="mobile"
-                        type="tel"
-                        required
-                        className={`form-input ${errors.mobile ? "has-error" : ""}`}
-                        placeholder="9876543210"
-                        value={values.mobile}
-                        onChange={handleChange}
-                    />
-                    {errors.mobile && <p className="error-text">{errors.mobile}</p>}
-                </div>
 
-                {/* EMAIL */}
-                <div className="form-group">
-                    <label htmlFor="email" className="form-label">
-                        <FiMail className="icon" /> Email Address
-                    </label>
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        className={`form-input ${errors.email ? "has-error" : ""}`}
-                        placeholder="you@example.com"
-                        value={values.email}
-                        onChange={handleChange}
-                    />
-                    {errors.email && <p className="error-text">{errors.email}</p>}
-                </div>
+               <FormInput
+  id="mobile"
+  name="mobile"
+  label="Mobile Number"
+  type="tel"
+  placeholder="9876543210"
+  value={values.mobile}
+  required
+  icon={<FiPhone />}
+  error={errors.mobile}
+  onChange={handleChange}
+/>
+
+<FormInput
+  id="email"
+  name="email"
+  label="Email Address"
+  type="email"
+  placeholder="you@example.com"
+  value={values.email}
+  required
+  icon={<FiMail />}
+  error={errors.email}
+  onChange={handleChange}
+/>
+
 
                 {/* INTERNSHIP SELECT — only for internship mode */}
                 {/* {name === "internship" && (
@@ -219,25 +206,21 @@ ${vals.message || "-"}
                 )} */}
 
                 {/* DRIVE LINK — only in internship mode */}
-                {name === "internship" && (
-                    <div className="form-group col-span-2">
-                        <label htmlFor="driveLink" className="form-label">
-                            <FiLink className="icon" /> Resume Google Drive Link
-                        </label>
-                        <input
-                            id="driveLink"
-                            name="driveLink"
-                            type="url"
-                            required
-                            className={`form-input ${errors.driveLink ? "has-error" : ""}`}
-                            placeholder="Paste Google Drive URL"
-                            value={values.driveLink}
-                            onChange={handleChange}
-                        />
-                        {errors.driveLink && <p className="error-text">{errors.driveLink}</p>}
-                        <p className="hint">Make link public or “Anyone with link can view”.</p>
-                    </div>
-                )}
+             {name === "internship" && (
+  <FormInput
+    id="driveLink"
+    name="driveLink"
+    label="Resume Google Drive Link"
+    type="url"
+    placeholder="Paste Google Drive URL"
+    value={values.driveLink}
+    required
+    icon={<FiLink />}
+    error={errors.driveLink}
+    onChange={handleChange}
+  />
+)}
+
 
                 {/* MESSAGE */}
                 <div className="form-group col-span-2">
@@ -272,3 +255,97 @@ ${vals.message || "-"}
 };
 
 export default FormHorizontal;
+
+
+interface FormInputProps {
+  id: string;
+  name: string;
+  label: string;
+  type?: string;
+  placeholder?: string;
+  value?: string;
+  required?: boolean;
+  error?: string;
+  icon?: React.ReactNode;
+  onChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
+}
+
+const FormInput: React.FC<FormInputProps> = ({
+  id,
+  name,
+  label,
+  type = "text",
+  placeholder,
+  value,
+  required = false,
+  error,
+  icon,
+  onChange,
+}) => {
+  return (
+    <div className="form-group">
+      <label htmlFor={id} className="form-label">
+        {icon && <span className="icon" >{icon}</span>} {label}
+      </label>
+
+      <input
+        id={id}
+        name={name}
+        type={type}
+        required={required}
+        className={`form-input ${error ? "has-error" : ""}`}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+      />
+
+      {error && <p className="error-text">{error}</p>}
+    </div>
+  );
+};
+
+ FormInput;
+
+ 
+ interface FormTextareaProps {
+  id: string;
+  name: string;
+  label: string;
+  placeholder?: string;
+  value?: string;
+  error?: string;
+  rows?: number;
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+}
+
+const FormTextarea: React.FC<FormTextareaProps> = ({
+  id,
+  name,
+  label,
+  placeholder,
+  value,
+  error,
+  rows = 3,
+  onChange,
+}) => {
+  return (
+    <div className="form-group col-span-2">
+      <label htmlFor={id} className="form-label">{label}</label>
+
+      <textarea
+        id={id}
+        name={name}
+        rows={rows}
+        className="form-input textarea"
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+      />
+
+      {error && <p className="error-text">{error}</p>}
+    </div>
+  );
+};
+
