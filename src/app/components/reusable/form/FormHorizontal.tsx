@@ -129,7 +129,7 @@ ${vals.message || "-"}
     return (
         <motion.form
             onSubmit={handleSubmit}
-            className="form-horizontal-container"
+            className="form-horizontal-container "
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -139,6 +139,8 @@ ${vals.message || "-"}
 
                 {/* NAME */}
                 <FormInput
+    classStyle="col-span-2 md:col-span-1"
+
   id="name"
   name="name"
   label="Full Name"
@@ -152,6 +154,8 @@ ${vals.message || "-"}
 
 
                <FormInput
+    classStyle="col-span-2 md:col-span-1"
+
   id="mobile"
   name="mobile"
   label="Mobile Number"
@@ -165,6 +169,8 @@ ${vals.message || "-"}
 />
 
 <FormInput
+    classStyle="col-span-2 md:col-span-1"
+
   id="email"
   name="email"
   label="Email Address"
@@ -209,6 +215,7 @@ ${vals.message || "-"}
              {name === "internship" && (
   <FormInput
     id="driveLink"
+    classStyle="col-span-2 md:col-span-1"
     name="driveLink"
     label="Resume Google Drive Link"
     type="url"
@@ -260,6 +267,7 @@ export default FormHorizontal;
 interface FormInputProps {
   id: string;
   name: string;
+  classStyle:string;
   label: string;
   type?: string;
   placeholder?: string;
@@ -276,6 +284,7 @@ const FormInput: React.FC<FormInputProps> = ({
   id,
   name,
   label,
+  classStyle,
   type = "text",
   placeholder,
   value,
@@ -285,7 +294,7 @@ const FormInput: React.FC<FormInputProps> = ({
   onChange,
 }) => {
   return (
-    <div className="form-group">
+    <div className={`${classStyle} form-group`}>
       <label htmlFor={id} className="form-label">
         {icon && <span className="icon" >{icon}</span>} {label}
       </label>
