@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import img from "@/assets/image/home/office_img.jpg";
+import img from "@/assets/image/home/team_img.jpg";
 
 
 const HomeAboutSection = () => {
