@@ -13,20 +13,16 @@ import {
     FiServer,
     FiChevronLeft,
     FiChevronRight,
-    FiUser,
-    FiPhone,
-    FiMail,
-    FiLink,
-    FiUploadCloud,
+
 } from "react-icons/fi";
 
 import img1 from "@/assets/image/internship/internship-1.jpg"
 import img2 from "@/assets/image/internship/internship-2.jpg"
 import img3 from "@/assets/image/internship/internship-3.jpg"
-import FormHorizontal from "@/app/components/reusable/form/FormHorizontal";
+
 import { InternshipItem } from "./data";
 import Link from "next/link";
-import TestimonialsOne from "../components/testimonial/TestimonialOne";
+
 import Image from "next/image";
 
 
@@ -121,18 +117,13 @@ const internshipItems: InternshipItem[] = [
 
 const InternshipPage: React.FC = () => {
 
-    const [mounted, setMounted] = useState(false);
-
-
-
-    const [activeBannerIndex, setActiveBannerIndex] = useState(0);
 
     const [cardStartIndex, setCardStartIndex] = useState(0);
     const [visibleCount, setVisibleCount] = useState(3); // how many cards to show
 
 
     useEffect(() => {
-        setMounted(true);
+
         const updateVisible = () => {
             if (typeof window === "undefined") return;
 
@@ -170,19 +161,6 @@ const InternshipPage: React.FC = () => {
         return internshipItems[index];
     });
 
-    const handlePrev = () => {
-        setActiveBannerIndex((prev) =>
-            prev === 0 ? sliderImages.length - 1 : prev - 1
-        );
-    };
-
-    const handleNext = () => {
-        setActiveBannerIndex((prev) => (prev + 1) % sliderImages.length);
-    };
-
-    const handleBannerClick = (index: number) => {
-        setActiveBannerIndex(index);
-    };
 
 
     return (

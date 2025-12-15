@@ -3,11 +3,12 @@ import ContactPage from './ContactPage'
 import { createMetadata } from '@/app/utils/metaTags';
 
 
+
 export const metadata = createMetadata({
-  title: "Contact ",
-  description: "Contact page description ",
+  title: "InfoZen IT - Business Website & App Solutions",
+  description: "AProfessional IT services, web development, mobile apps, and digital transformation solutions",
   endpoint: "contact",
-  siteName: "contact",
+  siteName: "InfoZen IT - Business Website & App Solutions",
 });
 
 const Contact = () => {
