@@ -195,7 +195,7 @@ const InternshipPage: React.FC = () => {
       </p>
 
       <div className="mt-6 flex flex-wrap items-center gap-4">
-        <button className="rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-6 py-2 text-sm font-semibold shadow-lg shadow-violet-500/30 transition hover:scale-105 hover:shadow-cyan-500/40">
+        <button className="cursor-pointer rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-6 py-2 text-sm font-semibold shadow-lg shadow-violet-500/30 transition hover:scale-105 hover:shadow-cyan-500/40">
           View Internship Openings
         </button>
 
