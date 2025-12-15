@@ -89,7 +89,7 @@ const Navbar = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
-        handleScroll(); // run once on mount
+        handleScroll();
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -102,9 +102,9 @@ const Navbar = () => {
                 <div className="container">
                     <div className="navbar-container">
                         {/* Logo */}
-                        <div className="navbar-logo">
+            <Link href={'/'}>            <div className="navbar-logo">
                                <Image src={logo} alt={`border rounded-md`}  height={60} />
-                        </div>
+                        </div></Link>
 
                         {/* Desktop menu */}
                         <nav className="navbar-menu">
