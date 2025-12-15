@@ -9,10 +9,10 @@ import { createMetadata } from "../utils/metaTags";
 
 
 export const metadata = createMetadata({
-  title: "Home — MySite",
-  description: "Home page description",
-  endpoint: "/about",
-  siteName: "MySite  About",
+  title: "InfoZen IT - Business Website & App Solutions",
+  description: "Professional IT services, web development, mobile apps, and digital transformation solutions",
+  endpoint: "   ",
+  siteName: "InfoZen IT - Business Website & App Solutions",
 });
 export default function ClientRootLayout({
     children,

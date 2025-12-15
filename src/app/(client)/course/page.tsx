@@ -3,7 +3,8 @@ import CoursesPage from './CoursePage'
 
 const Course = () => {
   return (
-  <CoursesPage/>
+    <></>
+  // <CoursesPage/>
   )
 }
 

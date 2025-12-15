@@ -26,7 +26,7 @@ export function createMetadata({
             description,
             type: "website",
             locale: "en_IN",
-            url: `${baseUrl}${endpoint}`,
+            url: `${baseUrl}/${endpoint}`,
             siteName,
         },
     };

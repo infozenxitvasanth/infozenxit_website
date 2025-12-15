@@ -35,11 +35,11 @@ const NAV_ITEMS = [
         route: "/internship",
         dropdown: false,
     },
-        {
-        navName: "Course",
-        route: "/course",
-        dropdown: false,
-    },
+    //     {
+    //     navName: "Course",
+    //     route: "/course",
+    //     dropdown: false,
+    // },
     {
         navName: "Career",
         route: "/career",

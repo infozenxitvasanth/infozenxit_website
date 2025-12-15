@@ -12,7 +12,7 @@ let CLIENT_DOMINE =_domineConsts.domine.client
             lastModified: new Date(),
         },
         {
-            url: `${CLIENT_DOMINE}/`,
+            url: `${CLIENT_DOMINE}/about`,
             lastModified: new Date(),
         },
       
