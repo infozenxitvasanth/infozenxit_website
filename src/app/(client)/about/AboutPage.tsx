@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import {
     FiCheck,
@@ -14,6 +13,7 @@ import {
     FiSmartphone,
 } from "react-icons/fi";
 import MapSection from "@/app/components/reusable/map/MapSeaction";
+import Link from "next/link";
 
 const fadeUp = {
     hidden: { y: 20, opacity: 0 },
@@ -195,15 +195,16 @@ export default function AboutPage() {
                     className="grid md:grid-cols-3 gap-6 "
                 >
                     {[
-                        { name: "Web Development", icon: <FiLayers /> },
-                        { name: "Mobile App Development", icon: <FiSmartphone /> },
-                        { name: "UI/UX & Graphic Design", icon: <FiStar /> },
-                        { name: "Support & Maintenance", icon: <FiClock /> },
-                        { name: "E-commerce Solutions", icon: <FiShoppingCart /> },
-                        { name: "SEO & Digital Marketing", icon: <FiTrendingUp /> },
+                        { name: "Web Development", icon: <FiLayers />,route:"/services/web-design-development" },
+                        { name: "Mobile App Development", icon: <FiSmartphone />,route:"/services/mobile-app-development" },
+                        { name: "UI/UX & Graphic Design", icon: <FiStar />,route:"/services/logo-design-graphic-design" },
+                        { name: "Support & Maintenance", icon: <FiClock />,route:"/services/support-maintenance" },
+                        { name: "E-commerce Solutions", icon: <FiShoppingCart />,route:"/services/ecommerce-development" },
+                        { name: "SEO & Digital Marketing", icon: <FiTrendingUp />,route:"/services/seo-digital-marketing" },
                     ].map((item, i) => (
+                        <Link href={item.route} key={i} >
                         <motion.div
-                            key={i}
+                           
                             custom={i}
                             variants={cardAnim}
                             whileHover={{
@@ -221,7 +222,7 @@ export default function AboutPage() {
                                 {/* Title */}
                                 <p className="font-medium text-gray-800 text-sm">{item.name}</p>
                             </div>
-                        </motion.div>
+                        </motion.div></Link>
                     ))}
                 </motion.div>
             </motion.div>
