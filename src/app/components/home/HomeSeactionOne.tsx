@@ -13,7 +13,7 @@ const HomeSectionOne: React.FC = () => {
     return (
         <section id="home" className="section home-section-one">
             {/* --- Soft animated background circles --- */}
-                 <BannerSlider />
+                 {/* <BannerSlider /> */}
             <div className="home-bg-circles">
                 <div className="bg-circle c1" />
                 <div className="bg-circle c2" />
@@ -105,13 +105,3 @@ const HomeSectionOne: React.FC = () => {
                         Learn More
                     </button> */}
 export default HomeSectionOne;
-
-
-
-// scss
-
-
-// Creaet I want Bnner Slider I want 3 imaeg 3s once slide i want
-// $primary: #8b5cf6;
-//$secondary: #06b6d4;
-//$primary-dark: #4a3185;

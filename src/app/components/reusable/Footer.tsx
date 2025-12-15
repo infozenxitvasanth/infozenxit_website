@@ -12,7 +12,7 @@ let companyName = 'InfoZenX IT'
 
   return (
     <footer className="site-footer">
-      <div className="footer-inner container">
+      <div className="footer-inner container-fluid px-4">
         <div className="footer-top">
           <div className="brand ">
             <div className="logo-wrap" aria-hidden>

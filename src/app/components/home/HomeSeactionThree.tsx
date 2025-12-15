@@ -105,8 +105,8 @@ const HomeSeactionThree = () => {
                                 whileHover={{ x: 4 }}
                                 transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                             >
-                                <span>Talk to our mentors</span>
-                                <FiArrowRightCircle className="text-base" />
+                                <Link className="flex gap-2" href={'/contact'}><span>contact</span>  <FiArrowRightCircle className="text-base" /></Link>
+                              
                             </motion.div>
                             <span className="your-suggestion-shine" />
                         </div>

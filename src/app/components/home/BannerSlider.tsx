@@ -61,7 +61,7 @@ const BannerSlider: React.FC = () => {
   <FaAngleLeft />
 </button>
 
-{/* Right Button */}
+
 <button
   onClick={nextSlide}
   className="absolute   -translate-y-1/2 bg-black bg-opacity-50  p-3 rounded-full   cursor-pointer   banner-right-btn"
