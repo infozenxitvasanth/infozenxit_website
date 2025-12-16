@@ -14,13 +14,13 @@ const HomeSectionOne: React.FC = () => {
         <section id="home" className="section home-section-one">
             {/* --- Soft animated background circles --- */}
                  {/* <BannerSlider /> */}
-            <div className="home-bg-circles">
+            {/* <div className="home-bg-circles">
                 <div className="bg-circle c1" />
                 <div className="bg-circle c2" />
                 <div className="bg-circle c3" />
-            </div>
+            </div> */}
 
-            {/* <motion.div
+            <motion.div
                 className="hero-orbit-wrapper-back"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -43,7 +43,7 @@ const HomeSectionOne: React.FC = () => {
                 >
                     <span className="hero-orbit-dot" />
                 </motion.div>
-            </motion.div> */}
+            </motion.div>
 
             {/* --- Text in front --- */}
             <motion.div
