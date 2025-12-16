@@ -50,6 +50,7 @@ const BATCH_SIZE = 10;
 
 const Gallery = () => {
   const [filter, setFilter] = useState("all");
+  const [isLoading,setIsLoading] =useState(false)
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
 
   const filteredImages =
@@ -71,6 +72,7 @@ const Gallery = () => {
     setFilter(cat);
     setVisibleCount(BATCH_SIZE);
   };
+  
 
   return (
     <div className="gallery-wrapper">
@@ -81,6 +83,8 @@ const Gallery = () => {
           <p>Discover beautiful moments and explore our categories</p>
         </div>
       </section>
+{
+    isLoading ? <SkeletonLoading/>:
 
       <section className="gallery-section">
         <div className="masonry text-center">
@@ -111,7 +115,7 @@ const Gallery = () => {
             </button>
           </div>
         )}
-      </section>
+      </section>}
 
       {/* Fixed Bottom Filter */}
       <div className="gallery-filter">
@@ -130,16 +134,20 @@ const Gallery = () => {
 };
 
 export default Gallery;
-    //  Array.from({ length: 8 }).map((_, idx) => (
-    //     <motion.div
-    //       key={idx}
-    //       className="masonry-item skeleton"
-    //       initial={{ opacity: 0.3 }}
-    //       animate={{ opacity: 1 }}
-    //       transition={{
-    //          duration: 0.5, 
-    //         repeat: Infinity,
-    //         repeatType: "reverse",
-    //       }}
-    //     />
-    //   ))
+  
+
+const SkeletonLoading=()=>{
+    return    Array.from({ length: 8 }).map((_, idx) => (
+      <motion.div
+          key={idx}
+          className="masonry-item skeleton"
+          initial={{ opacity: 0.3 }}
+          animate={{ opacity: 1 }}
+          transition={{
+             duration: 0.5, 
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+        />
+      ))
+}
