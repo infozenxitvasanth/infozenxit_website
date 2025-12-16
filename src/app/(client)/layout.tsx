@@ -10,10 +10,10 @@ import Cursor from "../components/reusable/Cursor";
 
 
 export const metadata = createMetadata({
-  title: "InfoZen IT - Business Website & App Solutions",
+  title: "InfoZenX IT - Business Website & App Solutions",
   description: "Professional IT services, web development, mobile apps, and digital transformation solutions",
   endpoint: "   ",
-  siteName: "InfoZen IT - Business Website & App Solutions",
+  siteName: "InfoZenX IT - Business Website & App Solutions",
 });
 export default function ClientRootLayout({
     children,

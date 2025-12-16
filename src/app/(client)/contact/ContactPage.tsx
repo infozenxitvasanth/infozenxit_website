@@ -10,7 +10,7 @@ export default function ContactPage() {
         <h1 className="text-3xl text-white font-bold">Contact Us</h1>
         <div className={`underline mx-auto mt-3`} />
         <p className="text-sm text-slate-300 mt-4">
-          Get in touch with InfoZen IT. We'd love to hear from you and discuss how we can help your business grow.
+          Get in touch with InfoZenX IT. We'd love to hear from you and discuss how we can help your business grow.
         </p>
       </header>
 

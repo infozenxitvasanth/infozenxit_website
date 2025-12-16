@@ -67,7 +67,7 @@ const HomeSectionOne: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
                 >
-                    <span> InfoZen <span> X </span>  IT</span>
+                    <span> InfoZen <span>  X </span>  IT</span>
                 
                 </motion.p>
 

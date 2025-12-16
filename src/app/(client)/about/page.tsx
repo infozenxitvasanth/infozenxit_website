@@ -4,10 +4,10 @@ import { createMetadata } from '@/app/utils/metaTags';
 
 
 export const metadata = createMetadata({
-  title: "InfoZen IT - Business Website & App Solutions",
+  title: "InfoZenX IT - Business Website & App Solutions",
   description: "AProfessional IT services, web development, mobile apps, and digital transformation solutions",
   endpoint: "about",
-  siteName: "InfoZen IT - Business Website & App Solutions",
+  siteName: "InfoZenX IT - Business Website & App Solutions",
 });
 
 const About = () => {
