@@ -124,7 +124,13 @@ background-color: #000;
     color: transparent;
     font-weight: 800;
 }
-
+.company-name span span {
+    background: linear-gradient(to right, var(--primary), #0ea5e9);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    font-family: var(--font-roboto), sans-serif; /* <-- add your desired font */
+}
 .company-desc {
     font-size: 22px;
     padding: 40px;

@@ -1,5 +1,5 @@
 
-import { Poppins } from "next/font/google";
+import { Pacifico, Poppins } from "next/font/google";
 import "../styles/scss/main.scss";
 import './globals.css';
 const poppins = Poppins({
@@ -7,7 +7,11 @@ const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins", 
 });
-
+const pacifico = Pacifico({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
 
 export default function RootLayout({
   children,
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable}`}>
+      <body className={`${poppins.variable} ${pacifico.variable}`}>
        
         {children}
       </body>
