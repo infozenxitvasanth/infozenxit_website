@@ -5,6 +5,7 @@ import '../globals.css';
 import Navbar from "../components/reusable/Navbar";
 import Footer from "../components/reusable/Footer";
 import { createMetadata } from "../utils/metaTags";
+import Cursor from "../components/reusable/Cursor";
 
 
 
@@ -21,6 +22,7 @@ export default function ClientRootLayout({
 }>) {
     return (
      <div>
+        <Cursor/>
             <Navbar />
                 {children}
                 <Footer/>

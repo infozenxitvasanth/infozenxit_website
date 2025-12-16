@@ -25,7 +25,7 @@ let companyName = 'InfoZenX IT'
             </div>
           </div>
 
-          <nav className="footer-nav" aria-label="Footer navigation">
+          <nav className="footer-nav container mt-3 px-5" aria-label="Footer navigation">
             <div className="nav-col">
               <h4>Resources</h4>
               <ul>
@@ -45,21 +45,19 @@ let companyName = 'InfoZenX IT'
               </ul>
             </div>
 
-            <div className="nav-col">
-              {/* <h4>Legal</h4>
-              <ul>
-                <li><a href="#privacy">Privacy Policy</a></li>
-              </ul> */}
-            </div>
+     
 
             <div className="nav-col subscribe">
-              <h4>Social Media</h4>
+              {/* <h4>Social Media</h4> */}
             
               <div className="socials" aria-hidden>
                 <a target='_blank' href="https://www.facebook.com/profile.php?id=61584575266481" className="social"><FiFacebook size={18} /></a>
                 <a target='_blank' href="https://www.instagram.com/infozenx_it/" className="social"><FiInstagram size={18} /></a>
                 <a target='_blank' href='https://www.linkedin.com/company/infozenx-it/posts/?feedView=all' className="social"><FiLinkedin size={18} /></a>
               </div>
+            </div>
+            <div>
+              
             </div>
           </nav>
         </div>

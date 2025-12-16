@@ -49,7 +49,7 @@ export const internship: Record<string, FeaturesFormDetails<InternshipSlug>> = {
 
     "machine-learning-data-science": {
         slug: "machine-learning-data-science",
-        title: "Machine Learning & Data Science",
+        title: "Machine Learning ",
         subtitle: "AI & Predictive Modeling",
         description:
             "Master AI and machine learning algorithms, data analysis, and predictive modeling with hands-on projects.",

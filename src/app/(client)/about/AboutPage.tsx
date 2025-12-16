@@ -54,14 +54,14 @@ export default function AboutPage() {
             <motion.div
                 variants={fadeUp}
                 transition={{ duration: 0.8 }}
-                className="grid md:grid-cols-1 gap-10 items-center mb-12 text-center"
+                className="grid md:grid-cols-1 gap-5 items-center mb-12 text-center"
             >
-                <p className="mt-5 text-gray-200  leading-relaxed">
+                <p className="mt-2 text-gray-200  leading-relaxed">
                     InfoZenX IT is a leading technology solutions provider specializing in web
                     development, mobile app development, digital marketing, and IT consulting.
                 </p>
 
-                <p className="mt-5 text-gray-200 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-200 dark:text-gray-300 leading-relaxed">
                     We deliver innovative, scalable, and efficient solutions that empower businesses
                     to grow in the digital world.
                 </p>

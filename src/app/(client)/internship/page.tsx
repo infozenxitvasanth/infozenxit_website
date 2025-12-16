@@ -43,7 +43,7 @@ const internshipItems: InternshipItem[] = [
     },
     {
         slug: "machine-learning-data-science",
-        title: "Machine Learning & Data Science",
+        title: "Machine Learning ",
         subtitle: "AI & Predictive Modelling",
         description:
             "Work with real datasets, ML models, and data visualisation tools.",

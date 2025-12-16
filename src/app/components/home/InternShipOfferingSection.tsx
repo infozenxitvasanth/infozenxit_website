@@ -65,7 +65,7 @@ const listItemVariants: Variants = {
 const InternShipOfferingSection = () => {
   const internships = [
 {name:"Python Django",route:"/internship/python-django"},
-{name:"Machine Learning & Data Sciences",route:"/internship/machine-learning-data-science"},
+{name:"Machine Learning ",route:"/internship/machine-learning-data-science"},
 {name:"PHP Web Development",route:"/internship/php-web-development"},
 {name:"Java",route:"/internship/java"},
 {name:"React JS",route:"/internship/react-js"},

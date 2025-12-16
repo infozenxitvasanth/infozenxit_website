@@ -33,7 +33,10 @@ $primary-dark: vars.$primary-dark;
         border-radius: 10px;
         box-shadow: 0 8px 20px rgba(2, 6, 23, 0.06);
 
-        text-align: center;
+        // text-align: center;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
         transition: transform 0.2s ease, box-shadow 0.25s ease;
 
         &:hover {

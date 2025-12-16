@@ -38,7 +38,7 @@ const expertiseList = [
    {name: "Mobile app development",route:"/services/web-design-development"},
    {name: "Android app development",route:"/services/mobile-app-development"},
    {name:  "Flutter app development",route:"services/mobile-app-development"},
-   {name: "WordPress web development",route:"services/web-design-development"},
+   {name: "WordPress  development",route:"services/web-design-development"},
    {name: "Front-end development",route:"services/web-design-development"},
    {name:  "UI design",route:"services/logo-design-graphic-design"},
 

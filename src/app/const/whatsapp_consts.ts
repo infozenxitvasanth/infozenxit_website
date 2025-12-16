@@ -2,8 +2,8 @@ export let _whatsappConsts = {
 
 
     number: {
-        hr: "9486188648",
-        manager: "9486188648",
+        hr: "7200286091",
+        manager: "7200286091 ",
 
     }
 }
