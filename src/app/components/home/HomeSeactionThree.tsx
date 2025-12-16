@@ -72,7 +72,7 @@ const HomeSeactionThree = () => {
                         </h2>
 
                         {/* 🔹 short line kept here */}
-                        <p className="text-sm sm:text-base text-slate-200 max-w-xl">
+                        <p className="text-sm sm:text-base text-black max-w-xl">
                             We have a team of experts who help developers in multiple ways.
                         </p>
 
@@ -82,16 +82,16 @@ const HomeSeactionThree = () => {
                                     <FiHeart className="text-pink-300 text-xl" />
                                 </div>
                                 <div className="space-y-2">
-                                    <h3 className="text-lg md:text-xl font-semibold">
+                                    <h3 className="text-lg md:text-xl text-black font-semibold">
                                         Grab The Opportunity to Work with Us &amp; Learn As Well
                                     </h3>
 
                                     {/* 🔹 add the same line inside card if you want it there too */}
-                                    <p className="text-xs sm:text-sm text-slate-200/90">
+                                    <p className="text-xs sm:text-sm text-black">
                                         We have a team of experts who help developers in multiple ways.
                                     </p>
 
-                                    <p className="text-sm sm:text-[17px] text-slate-100">
+                                    <p className="text-sm sm:text-[17px] text-black">
                                         InfoZen&apos;s internship will allow you to work alongside and
                                         pick the brains of a group of web developers with the ultimate
                                         knowledge for Mobile app development, Android app development,
@@ -118,7 +118,7 @@ const HomeSeactionThree = () => {
                         className="your-suggestion-right space-y-4 py-5"
                         variants={rightBlockVariants}
                     >
-                        <p className="text-xs uppercase tracking-[0.28em] text-cyan-200 mb-1">
+                        <p className="text-xs uppercase tracking-[0.28em]  mb-1">
                             Areas of focus
                         </p>
 
@@ -136,7 +136,8 @@ const HomeSeactionThree = () => {
                             ))}
                         </div>
 
-                        <p className="text-xs text-slate-300/80 mt-2">
+                        <p className="text-xs mt-2 text-dark"> 
+                            {/*  text-slate-300/80 */}
                             Learn with hands-on guidance, code reviews, and practical exposure to
                             live projects.
                         </p>

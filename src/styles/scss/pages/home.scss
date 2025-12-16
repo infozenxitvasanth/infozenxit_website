@@ -53,8 +53,9 @@ background-color: #000;
     padding-top: 6rem;
     padding-bottom: 7rem;
     overflow: hidden;
-    background: radial-gradient(circle at top, #101827, #020617 55%, #000 100%);
-    color: #fff;
+    background-color:#eee;
+    // background: radial-gradient(circle at top, #101827, #020617 55%, #000 100%);
+    color: vars.$text-dark;
 }
 
 /* Text centered and above animations */
@@ -465,7 +466,9 @@ $primary-dark: #4a3185;
 
 .your-suggestion-section {
     position: relative;
-    background: radial-gradient(circle at top left, $primary 0, #020617 38%, #020617 100%);
+    background-color: #fff;
+    color: #000;
+    // background: radial-gradient(circle at top left, $primary 0, #020617 38%, #020617 100%);
     isolation: isolate;
 
     &::before,
