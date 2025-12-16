@@ -13,7 +13,7 @@ export const JOBS: Job[] = [
         id: "frontend",
         title: "Software Engineer — Frontend",
         team: "Software",
-        location: "Hybrid - Nagercoil",
+        location: "On site - Nagercoil",
         summary: "Build highly interactive UIs using React, Tailwind and modern patterns.",
         responsibilities: [
             "Ship user-facing features with excellent UX",
@@ -26,7 +26,7 @@ export const JOBS: Job[] = [
         id: "uiux",
         title: "UI/UX Designer",
         team: "Design",
-        location: "Remote",
+        location: "On site - Nagercoil",
         summary: "Design elegant, accessible interfaces and product flows.",
         responsibilities: [
             "Create high-fidelity screens and flows",
@@ -39,7 +39,7 @@ export const JOBS: Job[] = [
         id: "cloud",
         title: "Cloud Engineer",
         team: "Cloud",
-        location: "Remote",
+        location: "On site - Nagercoil",
         summary: "Design and operate our cloud infrastructure and deployments.",
         responsibilities: [
             "Improve infrastructure reliability",
@@ -54,7 +54,7 @@ export const JOBS: Job[] = [
         id: "digitalMarketing",
         title: "Digital Marketing Specialist",
         team: "Marketing",
-        location: "Remote",
+        location: "On site - Nagercoil",
         summary: "Drive brand awareness, content strategy, and online campaign performance.",
         responsibilities: [
             "Plan and run digital marketing campaigns",
@@ -67,7 +67,7 @@ export const JOBS: Job[] = [
         id: "seo",
         title: "SEO Specialist",
         team: "Marketing",
-        location: "Remote",
+        location: "On site - Nagercoil",
         summary: "Optimize website visibility and organic search performance.",
         responsibilities: [
             "Perform keyword research",
@@ -80,7 +80,7 @@ export const JOBS: Job[] = [
         id: "backend",
         title: "Backend Developer",
         team: "Software",
-        location: "Remote",
+        location: "On site - Nagercoil",
         summary: "Build scalable backend systems and APIs.",
         responsibilities: [
             "Design and maintain server-side logic",
@@ -93,7 +93,7 @@ export const JOBS: Job[] = [
         id: "mobile",
         title: "Mobile App Developer",
         team: "Software",
-        location: "Remote",
+        location: "On site - Nagercoil",
         summary: "Develop and maintain mobile applications for iOS and Android.",
         responsibilities: [
             "Build intuitive mobile interfaces",

@@ -8,7 +8,7 @@ const HomeExpertise = () => {
                     <div className="img-container">
 
                     </div>
-                    <div className="content">
+                    <div className="content pt-5">
                         <h2>Our Expertise & Support</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, porro. Vel, autem doloremque. Veniam tenetur dolorem incidunt illo quisquam eligendi sunt.</p>
                     </div>

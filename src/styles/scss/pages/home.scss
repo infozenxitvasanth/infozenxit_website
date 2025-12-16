@@ -1,5 +1,9 @@
 @use "../abstracts/variables" as vars;
+ body {
+  cursor: none;
+  overflow-x: hidden;
 
+}
 
 .banner-slider {
   position: absolute;
@@ -736,9 +740,7 @@ $primary-dark: #4a3185;
 }
 
 
- body {
-  cursor: none;
-}
+
 
 .cursor-dot {
   position: fixed;

@@ -25,3 +25,17 @@ cursor {}
 
     p {}
 }
+
+
+.text-linear-gradient {
+    font-size: clamp(2.8rem, 4vw, 3.6rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+     span {
+    background: linear-gradient(to right, vars.$primary, #0ea5e9);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+}
+

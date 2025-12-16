@@ -41,6 +41,11 @@ const NAV_ITEMS = [
     //     dropdown: false,
     // },
     {
+  navName: "Gallery",
+        route: "/gallery",
+        dropdown: false,
+    },
+    {
         navName: "Career",
         route: "/career",
         dropdown: false,

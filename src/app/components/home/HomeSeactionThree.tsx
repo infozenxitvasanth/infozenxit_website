@@ -57,7 +57,7 @@ const HomeSeactionThree = () => {
                 <div className="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.1fr)] items-center">
 
                     <motion.div
-                        className="space-y-5 your-suggestion-left"
+                        className="space-y-5 your-suggestion-left pt-5"
                         variants={leftBlockVariants}
                     >
                         <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 backdrop-blur-sm">
