@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
 body {
-  font-family: var(--font-poppins);
+   font-family: var(--font-poppins);
+    background: radial-gradient(circle at top, #1e293b 0%, #020617 55%, #020617);
+    background-repeat: no-repeat;
+    margin: 0;
+    cursor: none;
+    overflow-x: hidden;
 }

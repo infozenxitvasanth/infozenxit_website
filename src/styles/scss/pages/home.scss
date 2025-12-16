@@ -1,9 +1,5 @@
 @use "../abstracts/variables" as vars;
- body {
-  cursor: none;
-  overflow-x: hidden;
 
-}
 
 .banner-slider {
   position: absolute;
@@ -125,7 +121,7 @@ background-color: #000;
     font-weight: 800;
 }
 .company-name span span {
-    background: linear-gradient(to right, var(--primary), #0ea5e9);
+    background: linear-gradient(to right, #ec0c0c, #ec0c0c);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 800;
