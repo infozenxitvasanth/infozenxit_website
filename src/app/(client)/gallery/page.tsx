@@ -10,14 +10,28 @@ import festival_img4 from "@/assets/image/gallery/festival/img4.jpeg";
 import festival_img5 from "@/assets/image/gallery/festival/img5.jpeg";
 import festival_img6 from "@/assets/image/gallery/festival/img6.jpeg";
 import festival_img7 from "@/assets/image/gallery/festival/img7.jpeg";
-import festival_img8 from "@/assets/image/gallery/festival/img8.jpeg";
+// import festival_img8 from "@/assets/image/gallery/festival/img8.jpeg";
 import festival_img9 from "@/assets/image/gallery/festival/img9.jpeg";
 import festival_img10 from "@/assets/image/gallery/festival/img10.jpeg";
 
 import internship_img1 from "@/assets/image/gallery/internship/img1.jpeg";
 import internship_img2 from "@/assets/image/gallery/internship/img2.jpeg";
 import internship_img3 from "@/assets/image/gallery/internship/img3.jpeg";
-import internship_img4 from "@/assets/image/gallery/internship/img3.jpeg";
+import internship_img4 from "@/assets/image/gallery/internship/img4.jpeg";
+import internship_img5 from "@/assets/image/gallery/internship/img5.jpeg";
+import internship_img6 from "@/assets/image/gallery/internship/img6.jpeg";
+import internship_img7 from "@/assets/image/gallery/internship/img7.jpeg";
+import internship_img8 from "@/assets/image/gallery/internship/img8.jpeg";
+import internship_img9 from "@/assets/image/gallery/internship/img9.jpeg";
+import internship_img10 from "@/assets/image/gallery/internship/img10.jpeg";
+import internship_img11 from "@/assets/image/gallery/internship/img11.jpeg";
+import internship_img12 from "@/assets/image/gallery/internship/img12.jpeg";
+import internship_img13 from "@/assets/image/gallery/internship/img13.jpeg";
+import internship_img14 from "@/assets/image/gallery/internship/img14.jpeg";
+import internship_img15 from "@/assets/image/gallery/internship/img15.jpeg";
+import internship_img16 from "@/assets/image/gallery/internship/img16.jpeg";
+import internship_img17 from "@/assets/image/gallery/internship/img17.jpeg";
+import internship_img18 from "@/assets/image/gallery/internship/img18.jpeg";
 
 
 interface ImageItem {
@@ -36,14 +50,28 @@ const IMG_PATH: ImageItem[] = [
   { src: festival_img5.src, category: "festival" },
   {  src: festival_img6.src, category: "festival" },
   { src: festival_img7.src, category: "festival" },
-  {  src: festival_img8.src, category: "festival" },
+  // {  src: festival_img8.src, category: "festival" },
   { src: festival_img9.src, category: "festival" },
   { src: festival_img10.src, category: "festival" },
-//   
   { src: internship_img1.src, category: "internship" },
   {  src: internship_img2.src, category: "internship" },
    { src: internship_img3.src, category: "internship" },
   {  src: internship_img4.src, category: "internship" },
+ { src: internship_img5.src, category: "internship" },
+  {  src: internship_img6.src, category: "internship" },
+   { src: internship_img7.src, category: "internship" },
+  {  src: internship_img8.src, category: "internship" },
+   { src: internship_img9.src, category: "internship" },
+  {  src: internship_img10.src, category: "internship" },
+   { src: internship_img11.src, category: "internship" },
+  {  src: internship_img12.src, category: "internship" },
+   { src: internship_img13.src, category: "internship" },
+  {  src: internship_img14.src, category: "internship" },
+   { src: internship_img15.src, category: "internship" },
+  {  src: internship_img16.src, category: "internship" },
+{  src: internship_img17.src, category: "internship" },
+   { src: internship_img18.src, category: "internship" },
+
 ];
 
 const BATCH_SIZE = 10;
