@@ -125,7 +125,7 @@ background-color: #000;
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 800;
-    font-family: var(--font-roboto), sans-serif; /* <-- add your desired font */
+    font-family: var(--font-pacifico), sans-serif; /* <-- add your desired font */
 }
 .company-desc {
     font-size: 22px;
@@ -746,20 +746,21 @@ $primary-dark: #4a3185;
 
 
 
-
 .cursor-dot {
   position: fixed;
   width: 10px;
   height: 10px;
-  background: vars.$primary;
+  background: var(--primary); 
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
 
+
 .cursor-ring {
   position: fixed;
+  background-color: #c5c5c5c7;
   width: 32px;
   height: 32px;
   border: 2px solid rgb(255, 255, 255);
@@ -767,4 +768,23 @@ $primary-dark: #4a3185;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9998;
+}
+
+
+@media (max-width: 768px) {
+  .cursor-dot {
+    width: 8px;  
+    height: 8px;
+  }
+
+  .cursor-ring {
+    width: 24px; 
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cursor-dot, .cursor-ring {
+    display: none;
+  }
 }

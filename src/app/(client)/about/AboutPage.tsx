@@ -14,6 +14,12 @@ import {
 } from "react-icons/fi";
 import MapSection from "@/app/components/reusable/map/MapSeaction";
 import Link from "next/link";
+import EmployeeCard from "./EmployeeCard";
+import { emp_list } from "./data";
+import { FaLinkedinIn } from "react-icons/fa";
+import FounderSection from "./FounderSection";
+
+
 
 const fadeUp = {
     hidden: { y: 20, opacity: 0 },
@@ -176,11 +182,35 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
+
+            {/* =================================================== */}
+           {/* 
+            */}
+      <FounderSection/>
+
+
+       <div className=" max-w-7xl px-4">
+        <h3 className="text-center text-3xl md:text-4xl text-white font-semibold mb-8">Our's Team</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
+    
+    {emp_list.map((value, idx) => (
+   <div key={idx}>
+    <EmployeeCard
+      name={value.name}
+      role={value.role}
+      img_url={value.img_url}
+      linkedin_url={value.linkedin_url}
+    />
+  </div>
+    ))}
+  </div>
+</div>
+
             {/* =============================== SERVICES =============================== */}
             <motion.div
                 variants={fadeUp}
                 transition={{ duration: 0.9 }}
-                className="bg-slate-900/80 p-6 shadow-lg shadow-black/40 border border-[#94a3b82e] text-white p-6 rounded-2xl shadow-sm  "
+                className="bg-slate-900/80 my-5 p-6 shadow-lg shadow-black/40 border border-[#94a3b82e] text-white p-6 rounded-2xl shadow-sm  "
             >
                 <div className="mb-6">
                     <h4 className="font-semibold text-gray-200 text-lg">Our Services</h4>

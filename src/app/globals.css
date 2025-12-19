@@ -6,5 +6,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     cursor: none;
+    
     overflow-x: hidden;
+    /* object-fit: scale-down; */
 }

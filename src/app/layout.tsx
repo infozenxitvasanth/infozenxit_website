@@ -10,7 +10,7 @@ const poppins = Poppins({
 const pacifico = Pacifico({
   weight: ["400"],
   subsets: ["latin"],
-  variable: "--font-roboto",
+  variable: "--font-pacifico",
 });
 
 export default function RootLayout({
