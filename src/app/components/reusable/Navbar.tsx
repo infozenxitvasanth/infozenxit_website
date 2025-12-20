@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FiChevronDown, FiChevronUp, FiMenu, FiX } from "react-icons/fi";
 import { ButtonOne } from "./button/Button";
 import { usePathname } from "next/navigation";
-import logo from '@/assets/logo/icon_logo.png'
+import logo from '@/assets/logo/white_logo.jpg'
 import Image from "next/image";
 const NAV_ITEMS = [
     {

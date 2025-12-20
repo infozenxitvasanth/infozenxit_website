@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { FiFacebook, FiInstagram, FiLinkedin } from 'react-icons/fi';
 import Link from 'next/link';
-import logo from '@/assets/logo/transprant_logo.png'
+import logo from '@/assets/logo/white_logo.jpg'
 
 
 export default function Footer() {

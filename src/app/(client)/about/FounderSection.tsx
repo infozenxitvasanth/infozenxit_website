@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaLinkedinIn } from "react-icons/fa";
-import md_imng from '@/assets/image/about/md.jpeg'
+import md_imng from '@/assets/image/about/md.jpg'
 import Image from "next/image";
 export default function FounderSection() {
   return (
@@ -30,11 +30,11 @@ export default function FounderSection() {
             </span>
 
             <h2 className="text-3xl font-bold text-[#6b48be]">
-              M. Greeshma Sen
+              Greeshma Sen
             </h2>
 
             <p className="mt-4 text-gray-300 leading-relaxed">
-            M. Greeshma Sen, Managing Director of InfoZenX IT, leads the organization with a clear vision of delivering smarter solutions and  <span className="z-text-style ms-2">z</span>en experiences. Rooted in strong ethics, integrity, and purpose-driven innovation, she guides the company toward meaningful and sustainable digital transformation.
+            Greeshma Sen, Managing Director of InfoZenX IT, leads the organization with a clear vision of delivering smarter solutions and  <span className="z-text-style ms-2">z</span>en experiences. Rooted in strong ethics, integrity, and purpose-driven innovation, she guides the company toward meaningful and sustainable digital transformation.
             </p>
 
             <p className="mt-4 text-gray-300 leading-relaxed">
@@ -48,15 +48,15 @@ export default function FounderSection() {
                 <p className="text-sm text-gray-500">Founder,Infozenx It</p>
               </div>
 
-              {/* <a
-                href="https://www.linkedin.com/"
+              <a
+                href="https://linkedin.com/in/greeshma-sen-54042a3a1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-tr from-[#8b5cf6] to-[#06b6d4] text-white shadow-lg hover:scale-110 transition"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedinIn />
-              </a> */}
+              </a>
             </div>
           </div>
         </motion.div>

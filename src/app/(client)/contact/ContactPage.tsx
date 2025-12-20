@@ -18,7 +18,9 @@ export default function ContactPage() {
         <div className={"contact-card"}>
           <div className={'contact-iconCircle'}><FiPhone size={20} /></div>
           <h4 className="font-semibold mt-3 text-white">Phone</h4>
-          <p className="text-sm text-slate-200 mt-2">+91 9486188648</p>
+          <p className="text-sm text-slate-200 mt-2">+91 94861 88648</p>
+          <p className="text-sm text-slate-200 mt-2">+91 72002 86091</p>
+
         </div>
 
         <div className={"contact-card"}>

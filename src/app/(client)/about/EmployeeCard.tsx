@@ -26,7 +26,7 @@ export default function EmployeeCard({
         <img
           src={img_url}
           alt={name}
-          width={250}
+          width={240}
           className="  object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
@@ -57,7 +57,7 @@ export default function EmployeeCard({
       </div>
 
       {/* Content */}
-      <div className="p-5 text-center">
+      <div className="p-2 text-center">
         <h3 className="text-lg font-semibold text-[#4a3185]">
           {name}
         </h3>
