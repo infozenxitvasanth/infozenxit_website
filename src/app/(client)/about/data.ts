@@ -18,7 +18,7 @@ export let emp_list=[
   },
     {
     "name": "R Gnana sehar",
-    "role": "Area Manger",
+    "role": "Area Manager",
     "img_url": sagare.src,
     "linkedin_url": "https://www.linkedin.com/in/gnana-sehar-02113984"
   },
