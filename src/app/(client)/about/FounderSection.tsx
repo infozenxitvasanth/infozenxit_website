@@ -45,7 +45,7 @@ export default function FounderSection() {
             <div className="mt-6 flex items-center justify-between">
               <div>
                 <h4 className="font-semibold text-[#6b48be]">Owner</h4>
-                <p className="text-sm text-gray-500">Founder,Infozenx It</p>
+                <p className="text-sm text-gray-500">Founder,InfozenX IT</p>
               </div>
 
               <a
