@@ -10,7 +10,7 @@ import festival_img4 from "@/assets/image/gallery/festival/img4.jpeg";
 import festival_img5 from "@/assets/image/gallery/festival/img5.jpeg";
 import festival_img6 from "@/assets/image/gallery/festival/img6.jpeg";
 import festival_img7 from "@/assets/image/gallery/festival/img7.jpeg";
-// import festival_img8 from "@/assets/image/gallery/festival/img8.jpeg";
+import festival_img8 from "@/assets/image/gallery/festival/img8.jpeg";
 import festival_img9 from "@/assets/image/gallery/festival/img9.jpeg";
 import festival_img10 from "@/assets/image/gallery/festival/img10.jpeg";
 
@@ -32,6 +32,7 @@ import internship_img15 from "@/assets/image/gallery/internship/img15.jpeg";
 import internship_img16 from "@/assets/image/gallery/internship/img16.jpeg";
 import internship_img17 from "@/assets/image/gallery/internship/img17.jpeg";
 import internship_img18 from "@/assets/image/gallery/internship/img18.jpeg";
+import Image from "next/image";
 
 
 interface ImageItem {
@@ -48,10 +49,10 @@ const IMG_PATH: ImageItem[] = [
    
   {  src: festival_img4.src, category: "festival" },
   { src: festival_img5.src, category: "festival" },
-  // {  src: festival_img6.src, category: "festival" },
+  {  src: festival_img6.src, category: "festival" },
   { src: festival_img7.src, category: "festival" },
-  // {  src: festival_img8.src, category: "festival" },
-  // { src: festival_img9.src, category: "festival" },
+  {  src: festival_img8.src, category: "festival" },
+  { src: festival_img9.src, category: "festival" },
   // { src: festival_img10.src, category: "festival" },
   { src: internship_img1.src, category: "internship" },
   // {  src: internship_img2.src, category: "internship" },
@@ -127,6 +128,14 @@ const Gallery = () => {
                 transition={{ duration: 0.4 }}
               >
                 <img src={img.src} alt={img.category} loading="lazy" />
+
+                   {/* <Image
+  src={img.src}
+  alt={img.category}
+  width={200}
+  height={200}
+
+/> */}
               </motion.div>
             ))
           ) :<h1>No Image</h1>

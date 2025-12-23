@@ -41,6 +41,8 @@ let companyName = 'InfoZenX IT'
               <h4>Company</h4>
               <ul>
                <li> <Link href={'/about'}>About</Link></li>
+               <li> <Link href={'/gallery'}>Gallery</Link></li>
+
                 <li><Link href={'/contact'}>Contact</Link></li>
               </ul>
             </div>
