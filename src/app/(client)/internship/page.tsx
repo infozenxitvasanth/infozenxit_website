@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import { motion } from "framer-motion";
 import {
     FiCode,
@@ -120,6 +120,7 @@ const InternshipPage: React.FC = () => {
 
     const [cardStartIndex, setCardStartIndex] = useState(0);
     const [visibleCount, setVisibleCount] = useState(3); // how many cards to show
+const internshipSectionRef = useRef<HTMLDivElement | null>(null);
 
 
     useEffect(() => {
@@ -195,7 +196,14 @@ const InternshipPage: React.FC = () => {
       </p>
 
       <div className="mt-6 flex flex-wrap items-center gap-4">
-        <button className="cursor-pointer rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-6 py-2 text-sm font-semibold shadow-lg shadow-violet-500/30 transition hover:scale-105 hover:shadow-cyan-500/40">
+        <button
+       onClick={() =>
+    internshipSectionRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  }
+                className="cursor-pointer rounded-full bg-gradient-to-r from-violet-500 to-cyan-400 px-6 py-2 text-sm font-semibold shadow-lg shadow-violet-500/30 transition hover:scale-105 hover:shadow-cyan-500/40">
           View Internship Openings
         </button>
 
@@ -219,7 +227,7 @@ const InternshipPage: React.FC = () => {
 
 
             {/* ======================= Internship Cards ======================= */}
-            <section className="bg-slate-950 py-16">
+            <section className="bg-slate-950 py-16"  ref={internshipSectionRef}>
                 <div className="container mx-auto max-w-7xl px-4">
                     <motion.div
                         className="text-center"
