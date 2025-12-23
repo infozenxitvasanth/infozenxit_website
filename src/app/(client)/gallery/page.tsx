@@ -49,7 +49,7 @@ const IMG_PATH: ImageItem[] = [
    
   {  src: festival_img4.src, category: "festival" },
   { src: festival_img5.src, category: "festival" },
-  {  src: festival_img6.src, category: "festival" },
+  // {  src: festival_img6.src, category: "festival" },
   { src: festival_img7.src, category: "festival" },
   {  src: festival_img8.src, category: "festival" },
   { src: festival_img9.src, category: "festival" },
