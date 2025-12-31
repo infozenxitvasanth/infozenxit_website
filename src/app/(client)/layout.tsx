@@ -21,7 +21,7 @@ export default function ClientRootLayout({
     children: React.ReactNode;
 }>) {
     return (
-     <div>_
+     <div>
         <Cursor/>
             <Navbar />
                 {children}

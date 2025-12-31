@@ -43,6 +43,19 @@ export default function RootLayout({
             gtag('config', 'G-D3K8325SNT');
           `}
         </Script>
+           <Script id="chatling-config" strategy="afterInteractive">
+          {`
+            window.chtlConfig = {
+              chatbotId: "4515818882"
+            };
+          `}
+        </Script>
+
+        {/* Chatling Script */}
+        <Script
+          src="https://chatling.ai/js/embed.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={`${poppins.variable} ${pacifico.variable}`}>
        
